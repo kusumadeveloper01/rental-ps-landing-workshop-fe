@@ -18,6 +18,7 @@ module.exports = {
         // text
         "text-primary": "#FFFFFFb3",
         "text-secondary": "#FFFFFF",
+        "text-thirdary": "#E5E5E5",
       },
     },
   },

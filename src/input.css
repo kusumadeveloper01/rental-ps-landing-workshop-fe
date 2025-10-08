@@ -13,8 +13,12 @@ button {
   @apply transition-all duration-500 ease-in-out;
 }
 
-.section-container {
-  @apply mx-auto max-w-[85%] xl:max-w-[90%] 2xl:max-w-screen-2xl py-14;
+.section-container1 {
+  @apply mx-auto max-w-[90%] 2xl:max-w-[90%] py-14;
+}
+
+.section-container2 {
+  @apply mx-auto max-w-[90%] 2xl:max-w-[90%];
 }
 
 /* title */
@@ -39,4 +43,113 @@ button {
 
 .button-primary {
   @apply w-fit h-fit bg-accent-primary text-text-secondary rounded-md font-semibold border border-transparent hover:bg-transparent hover:border-accent-primary hover:text-accent-primary px-5 py-2 md:text-base text-sm;
+}
+
+
+/* section service */
+.div-title-and-description-section-service{
+  @apply flex flex-col items-start gap-5 leading-normal md:items-center md:justify-center md:text-center
+}
+
+.span-small-title-section-service{
+  @apply border bg-background-secondary border-text-secondary border-opacity-10 rounded-[10px] py-4 px-5
+}
+
+.text-title-section-service{
+  @apply font-bold lg:text-[50px] text-4xl text-text-secondary text-opacity-70
+}
+
+.span-in-text-title-section-service{
+  @apply italic font-bold text-opacity-100 text-text-secondary
+}
+
+.div-content-card-service-in-section-service{
+  @apply mt-[60px] border border-r-0 border-l-0 border-text-secondary border-opacity-10 py-10
+}
+
+.div-all-card-service-in-section-service{
+  @apply grid grid-cols-1 grid-rows-4 2xl:gap-5 xl:gap-x-4 gap-x-2 gap-y-4 xl:grid-cols-4 xl:grid-rows-1 md:grid-cols-3 md:grid-rows-2
+}
+
+.div-per-card-service-in-section-service{
+  @apply border bg-background-secondary border-text-secondary border-opacity-10 rounded-[10px] p-[30px]
+}
+
+.div-span-and-button-per-card-service-in-section-service{
+  @apply flex items-center gap-2
+}
+
+.span-and-button-in-per-card-service-in-section-service{
+  @apply rounded-full border border-text-secondary border-opacity-[12%] p-5 hover:bg-accent-primary hover:bg-opacity-[8%] hover:duration-500
+}
+
+.img-icon-in-span-in-per-card-service-in-section-service{
+  @apply lg:w-[26px] w-[22px]
+}
+
+.img-arrow-in-button-in-per-card-service-in-section-service{
+  @apply lg:w-[21.5px] w-[17.5px]
+}
+
+.div-text-title-and-description-per-card-in-section-service{
+  @apply mt-[30px] flex flex-col gap-[10px]
+}
+
+.text-title-in-card-service-in-section-service{
+  @apply font-bold text-text-thirdary lg:text-[22px] text-lg
+}
+
+.text-description-in-card-service-in-section-service{
+  @apply font-medium text-text-secondary text-opacity-65 lg:text-[17px] text-sm leading-normal
+}
+
+
+
+/* section gallery */
+.div-all-images-in-section-gallery{
+  @apply mt-[60px] grid md:grid-rows-3 md:grid-cols-1 grid-cols-1 grid-rows-3 2xl:gap-7 xl:gap-6 lg:gap-5 md:gap-4 gap-2
+}
+
+.style-per-images-in-per-div-in-section-gallery{
+  @apply col-span-1 row-span-1 rounded-[5px] object-cover w-full h-full md:aspect-auto aspect-[16/9]
+}
+
+
+/* section review customer */
+.div-per-card-review-in-section-review-customer{
+  @apply p-[22px] bg-background-secondary border border-text-secondary border-opacity-10 rounded-lg
+}
+
+.div-img-and-span-in-card-review-in-section-review-customer{
+  @apply flex items-center justify-between
+}
+
+.images-customer-in-card-review-in-section-review-customer{
+  @apply xl:w-[50px] xl:h-[50px] w-10 h-10 rounded-full object-cover
+}
+
+.span-icon-quotes-in-card-review-in-section-review-customer{
+  @apply border border-text-secondary border-opacity-[12%] rounded-full px-[15px] py-4
+}
+
+.icon-quotes-in-card-review-in-section-review-customer{
+  @apply xl:w-5 xl:h-[17px] w-[10px] h-[7px]
+}
+
+.text-review-in-card-review-in-section-review-customer{
+  @apply mt-[22px] font-medium xl:text-[17px] text-sm text-text-secondary text-opacity-65
+}
+
+.div-name-and-description-of-customer-in-card-review-in-section-review-customer{
+  @apply mt-[22px] flex flex-col gap-[6px]
+}
+
+.text-description-of-customer-in-card-review-in-section-review-customer{
+  @apply text-xs font-medium xl:text-sm text-text-secondary text-opacity-65
+}
+
+
+/* styling untuk scrollbar */
+.swiper-scrollbar-drag-custom{
+    @apply mt-12 cursor-grab;
 }
