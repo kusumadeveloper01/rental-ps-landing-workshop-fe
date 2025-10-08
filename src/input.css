@@ -45,6 +45,10 @@ button {
   @apply w-fit h-fit bg-accent-primary text-text-secondary rounded-md font-semibold border border-transparent hover:bg-transparent hover:border-accent-primary hover:text-accent-primary px-5 py-2 md:text-base text-sm;
 }
 
+.badge-section {
+  @apply w-fit h-fit bg-background-secondary border border-border-primary px-3 py-1 text-text-secondary rounded-lg font-bold text-sm md:text-base;
+}
+
 /* navbar */
 
 .navbar-container {
@@ -81,4 +85,44 @@ button {
 
 .box {
   @apply border border-border-primary rounded-lg p-4 w-full h-full bg-background-secondary;
+}
+
+/* ps */
+
+.ps-card {
+  @apply p-5 relative flex flex-col w-full justify-between items-start h-[350px];
+}
+
+.ps-photo-title {
+  @apply flex flex-col gap-2;
+}
+
+.ps-photo {
+  @apply flex justify-center w-[200px]  h-[200px];
+}
+
+.ps-photo img {
+  @apply w-full h-full object-contain;
+}
+
+.ps-price {
+  @apply flex items-center gap-2;
+}
+
+.ps-badge-price {
+  @apply w-fit h-fit border border-border-primary py-1 px-3 rounded-2xl text-text-primary text-sm font-medium;
+}
+
+.row {
+  @apply flex items-center gap-2;
+}
+
+/* border */
+
+.ps-border-x {
+  @apply w-[1px] h-[85%] absolute bg-border-primary;
+}
+
+.ps-border-y {
+  @apply h-[1px] w-[85%] absolute bg-border-primary;
 }
