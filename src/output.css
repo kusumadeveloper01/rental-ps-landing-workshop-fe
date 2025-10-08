@@ -564,6 +564,12 @@ body{
   font-family: Urbanist;
 }
 
+button{
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .section-container{
   margin-left: auto;
   margin-right: auto;
@@ -633,6 +639,42 @@ body{
 
 @media (min-width: 768px){
   .text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.button-primary{
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 87 243 / var(--tw-bg-opacity, 1));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.button-primary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(146 87 243 / var(--tw-border-opacity, 1));
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(146 87 243 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px){
+  .button-primary{
     font-size: 1rem;
     line-height: 1.5rem;
   }

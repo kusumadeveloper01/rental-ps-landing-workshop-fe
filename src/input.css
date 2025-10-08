@@ -9,6 +9,10 @@ body {
   @apply font-urbanist bg-background-primary;
 }
 
+button {
+  @apply transition-all duration-500 ease-in-out;
+}
+
 .section-container {
   @apply mx-auto max-w-[85%] xl:max-w-[90%] 2xl:max-w-screen-2xl py-14;
 }
@@ -31,4 +35,8 @@ body {
 
 .text {
   @apply font-medium text-text-primary text-sm md:text-base;
+}
+
+.button-primary {
+  @apply w-fit h-fit bg-accent-primary text-text-secondary rounded-md font-semibold border border-transparent hover:bg-transparent hover:border-accent-primary hover:text-accent-primary px-5 py-2 md:text-base text-sm;
 }
