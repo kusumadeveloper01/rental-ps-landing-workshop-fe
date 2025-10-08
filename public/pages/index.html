@@ -4,26 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hawo</title>
+
+    <!-- main css -->
     <link rel="stylesheet" href="../../src/output.css" />
+
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="">
-    <header class="navbar-container">
-      <nav class="section-container navbar-box !py-6">
-        <div class="logo-container">
-          <img src="../assets/hero/logo.svg" alt="" />
-          <h3 class="small-title">StickPlay.</h3>
+    <header>
+      <div class="navbar-container">
+        <nav class="section-container navbar-box !py-6">
+          <div class="logo-container">
+            <img src="../assets/hero/logo.svg" alt="" />
+            <h3 class="small-title">StickPlay.</h3>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="text"><a href="">Beranda</a></li>
+            <li class="text"><a href="">Profil</a></li>
+            <li class="text"><a href="">Layanan</a></li>
+            <li class="text"><a href="">Galeri</a></li>
+            <li class="text"><a href="">Review</a></li>
+          </ul>
+
+          <div class="flex items-center gap-4">
+            <button class="button-primary">Sewa Ps</button>
+            <i
+              onclick="openMobileMenu()"
+              class="cursor-pointer ri-menu-fold-line md:hidden text-2xl text-text-secondary"
+            ></i>
+          </div>
+        </nav>
+      </div>
+
+      <div class="navbar-mobile -translate-y-full" id="mobileMenu">
+        <div class="flex items-start justify-between">
+          <ul class="navbar-list-mobile">
+            <li class="text"><a href="">Beranda</a></li>
+            <li class="text"><a href="">Profil</a></li>
+            <li class="text"><a href="">Layanan</a></li>
+            <li class="text"><a href="">Galeri</a></li>
+            <li class="text"><a href="">Review</a></li>
+          </ul>
+
+          <i
+            class="ri-close-large-line text-text-secondary text-3xl cursor-pointer"
+            onclick="closeMobileMenu()"
+          ></i>
         </div>
-
-        <ul class="navbar-list">
-          <li class="text"><a href="">Beranda</a></li>
-          <li class="text"><a href="">Profil</a></li>
-          <li class="text"><a href="">Layanan</a></li>
-          <li class="text"><a href="">Galeri</a></li>
-          <li class="text"><a href="">Review</a></li>
-        </ul>
-
-        <button class="button-primary">Sewa Ps</button>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -33,7 +69,11 @@
         <h1 class="big-title text-center">
           <div class="flex items-center justify-center gap-5">
             Rental <span class="italic text-text-secondary">PlayStation</span>
-            <img src="../assets/hero/stick-button.svg" alt="" />
+            <img
+              src="../assets/hero/stick-button.svg"
+              alt=""
+              class="hidden md:block"
+            />
           </div>
           <div class="flex items-center justify-center gap-5">
             Untuk
@@ -41,7 +81,7 @@
               <img
                 src="../assets/hero/stick-ps5.svg"
                 alt=""
-                class="hover:-translate-y-2 duration-500 transition-all ease-in-out"
+                class="hover:-translate-y-2 duration-500 transition-all ease-in-out object-contain w-[100px] md:w-auto"
               />
             </a>
             Setiap
@@ -50,9 +90,9 @@
         </h1>
 
         <div
-          class="grid px-5 grid-cols-2 xl:grid-cols-[45%_auto_auto] mt-10 gap-4 grid-rows-1"
+          class="grid px-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-[45%_auto_auto] mt-10 gap-4"
         >
-          <div class="box col-span-2 xl:col-auto">
+          <div class="box md:col-span-2 xl:col-auto">
             <div class="flex items-center justify-between w-full">
               <div class="flex flex-col gap-4">
                 <p class="text">
@@ -125,5 +165,7 @@
     </main>
 
     <footer></footer>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
