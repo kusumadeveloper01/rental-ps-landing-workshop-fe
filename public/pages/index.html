@@ -7,12 +7,123 @@
     <link rel="stylesheet" href="../../src/output.css" />
   </head>
   <body class="">
-    <section class="section-container">
-      <h1 class="big-title">Rental PlayStation</h1>
-      <h2 class="medium-title">StickPlay: Tempat Dimana Game Jadi Momen</h2>
-      <h3 class="small-title">StickPlay: Tempat Dimana Game Jadi Momen</h3>
+    <header class="navbar-container">
+      <nav class="section-container navbar-box !py-6">
+        <div class="logo-container">
+          <img src="../assets/hero/logo.svg" alt="" />
+          <h3 class="small-title">StickPlay.</h3>
+        </div>
 
-      <button class="button-primary">Sewa PS</button>
-    </section>
+        <ul class="navbar-list">
+          <li class="text"><a href="">Beranda</a></li>
+          <li class="text"><a href="">Profil</a></li>
+          <li class="text"><a href="">Layanan</a></li>
+          <li class="text"><a href="">Galeri</a></li>
+          <li class="text"><a href="">Review</a></li>
+        </ul>
+
+        <button class="button-primary">Sewa Ps</button>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="section-container border-r border-b border-border-primary border-l"
+      >
+        <h1 class="big-title text-center">
+          <div class="flex items-center justify-center gap-5">
+            Rental <span class="italic text-text-secondary">PlayStation</span>
+            <img src="../assets/hero/stick-button.svg" alt="" />
+          </div>
+          <div class="flex items-center justify-center gap-5">
+            Untuk
+            <a href="">
+              <img
+                src="../assets/hero/stick-ps5.svg"
+                alt=""
+                class="hover:-translate-y-2 duration-500 transition-all ease-in-out"
+              />
+            </a>
+            Setiap
+          </div>
+          <span class="text-text-secondary italic"> Kesenanganmu! </span>
+        </h1>
+
+        <div
+          class="grid px-5 grid-cols-2 xl:grid-cols-[45%_auto_auto] mt-10 gap-4 grid-rows-1"
+        >
+          <div class="box col-span-2 xl:col-auto">
+            <div class="flex items-center justify-between w-full">
+              <div class="flex flex-col gap-4">
+                <p class="text">
+                  <span class="font-bold text-text-secondary"
+                    >Sewa Konsol PlayStation</span
+                  >
+                  dari Kami dan Sentuh Kesenangan Maksimal.
+                </p>
+
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center">
+                    <img src="../assets/hero/profile (1).svg" alt="" />
+                    <img
+                      src="../assets/hero/profile (1).svg"
+                      alt=""
+                      class="-ml-3"
+                    />
+                    <img
+                      src="../assets/hero/profile (1).svg"
+                      alt=""
+                      class="-ml-3"
+                    />
+                  </div>
+
+                  <p class="text">
+                    <span class="font-bold text-text-secondary">20K+</span>
+                    Review Positif
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="border hover:translate-y-2 border-border-primary p-4 rounded-3xl w-fit h-fit"
+              >
+                <img src="../assets/hero/arrow-down.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-4">
+                <h2 class="large-title !text-text-secondary">200</h2>
+
+                <img src="../assets/hero/plus.svg" alt="" />
+              </div>
+
+              <p class="text">
+                Lebih dari 200 unit PlayStation yang siap disewa setiap harinya.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-4">
+                <h2 class="large-title !text-text-secondary">4.9/5</h2>
+
+                <img src="../assets/hero/star.svg" alt="" />
+              </div>
+
+              <p class="text">
+                Rating layanan 4.9/5 dari pelanggan yang menyewa PlayStation
+                kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>

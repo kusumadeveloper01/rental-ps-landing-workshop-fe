@@ -18,6 +18,10 @@ module.exports = {
         // text
         "text-primary": "#FFFFFFb3",
         "text-secondary": "#FFFFFF",
+
+        // border
+
+        "border-primary": "#FFFFFF1f",
       },
     },
   },
